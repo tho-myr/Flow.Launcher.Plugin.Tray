@@ -1,0 +1,13 @@
+{
+    "$schema": "https://www.flowlauncher.com/schemas/plugin.schema.json",
+    "ID": "CF8EA71AD59140AEB67BC0C5A002C815",
+    "ActionKeyword": "tray",
+    "Name": "Tray",
+    "Description": "Search and manage windows system tray 🪟",
+    "Author": "tho-myr",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/tho-myr/Flow.Launcher.Plugin.Tray",
+    "IcoPath": "Images\\icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.Tray.dll"
+}

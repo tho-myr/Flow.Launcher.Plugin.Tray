@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.Tray</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.Tray</PackageId>
+    <Authors>tho-myr</Authors>
+    <PackageProjectUrl>https://github.com/tho-myr/Flow.Launcher.Plugin.Tray</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tho-myr/Flow.Launcher.Plugin.Tray</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <UseWpf>true</UseWpf>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.csproj' and '$(Configuration)' == 'Debug'">
+    <OutputPath>$(UserProfile)\AppData\Roaming\FlowLauncher\Plugins\Tray-DEBUG\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="5.2.0" />
+  </ItemGroup>
+
+</Project>
