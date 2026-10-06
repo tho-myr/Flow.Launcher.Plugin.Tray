@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flow.Launcher.Plugin" Version="5.2.0" />
+    <PackageReference Include="Flow.Launcher.Plugin" Version="5.3.1" />
     <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
   </ItemGroup>
 
